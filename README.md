@@ -1,6 +1,9 @@
 # Ubuntu16.04.box
 基于Vagrant.box 官方发布的Ubuntu16.04系统，自己安装配置一些开发使用的常用软件，而定制打包的Ubuntu16.04系统。
 
+## Box 下载地址
+- 百度云盘 链接: [http://pan.baidu.com/s/1skXgbCD](http://pan.baidu.com/s/1skXgbCD) 密码: 9gt6
+
 ## 源更换
 
 - Ubuntu 更换成 [阿里镜像源](http://blog.csdn.net/happywho250/article/details/52506321)
