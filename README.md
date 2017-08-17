@@ -2,6 +2,7 @@
 基于Vagrant.box 官方发布的Ubuntu16.04系统，自己安装配置一些开发使用的常用软件，而定制打包的Ubuntu16.04系统。
 
 ## Box 下载地址
+- 包含 Ubuntu16.04.box、Vagrant1.9.6、VirtualBox5.1.22
 - 百度云盘 链接: [http://pan.baidu.com/s/1skXgbCD](http://pan.baidu.com/s/1skXgbCD) 密码: 9gt6
 
 ## 源更换
@@ -28,7 +29,18 @@
 
 ## 使用
 ```shell
-    vagrant box add ubuntu16.04 ubuntu16.04.box
+    vagrant box add ubuntu16.04 ubuntu16.04-amd64-vagrant.box
     vagrant init ubuntu16.04
     vagrant up ubuntu16.04
 ```
+
+## 注意
+- 如在vagrant up 连接不上ssh时，在Vagrantfile文件中配置如下代码 ，使用账号密码形式登录。
+```
+     config.ssh.username = "ubuntu"
+     config.ssh.password = "ubuntu"
+```
+- 使用Vagrant 中你可能遇到的一些问题，请看[这里](https://www.jiangxianli.com/?tag=vagrant)
+- 本项目仅供个人使用，请勿用于商业用途。
+- 本Box基于官方镜像个人定制，无毒无后门，可放心使用。
+- 喜欢就点个赞吧!
