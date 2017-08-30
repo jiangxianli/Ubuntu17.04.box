@@ -1,13 +1,13 @@
-# Ubuntu16.04.box
-基于Vagrant.box 官方发布的Ubuntu16.04系统，自己安装配置一些开发使用的常用软件，而定制打包的Ubuntu16.04系统。
+# Ubuntu17.04.box
+基于Ubuntu官方发布的Ubuntu17.04系统，自己安装配置一些开发使用的常用软件，而使用Vagrant定制打包的Ubuntu17.04系统。
 
 ## Box 下载地址
-- 包含 Ubuntu16.04.box、Vagrant1.9.6、VirtualBox5.1.22
+- 包含 Ubuntu17.04.box、Vagrant1.9.6、VirtualBox5.1.22
 - 百度云盘 链接: [http://pan.baidu.com/s/1skXgbCD](http://pan.baidu.com/s/1skXgbCD) 密码: 9gt6
 
 ## 源更换
 
-- Ubuntu 更换成 [阿里镜像源](http://blog.csdn.net/happywho250/article/details/52506321)
+- Ubuntu 更换成 [阿里镜像源](http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:17.04source)
 - Npm 更换成  [淘宝镜像源](http://npm.taobao.org/)
 - Composer 更换成 [中国镜像](https://pkg.phpcomposer.com/)
 
@@ -24,21 +24,21 @@
 - rabbitmq / 3.5.7
 
 ## 初始密码
-- 系统用户 ubuntu/ubuntu 、vagrant/vagrant 、root/ubuntu
+- 系统用户 vagrant/vagrant 、root/vagrant
 - Mysql用户 root/root
 
 ## 使用
 ```shell
-    vagrant box add ubuntu16.04 ubuntu16.04-amd64-vagrant.box
-    vagrant init ubuntu16.04
-    vagrant up ubuntu16.04
+    vagrant box add ubuntu17 ubuntu17.04.box
+    vagrant init ubuntu17
+    vagrant up ubuntu17
 ```
 
 ## 注意
 - 如在vagrant up 连接不上ssh时，在Vagrantfile文件中配置如下代码 ，使用账号密码形式登录。
 ```
-     config.ssh.username = "ubuntu"
-     config.ssh.password = "ubuntu"
+     config.ssh.username = "vagrant"
+     config.ssh.password = "vagrant"
 ```
 - 使用Vagrant 中你可能遇到的一些问题，请看[这里](https://www.jiangxianli.com/?tag=vagrant)
 - 本项目仅供个人使用，请勿用于商业用途。
